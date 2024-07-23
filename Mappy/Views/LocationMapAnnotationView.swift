@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct LocationMapAnnotationView: View {
+    
+//    let accentColor = Color("AccentColor")
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 0) {
+            Image(systemName: "pin.fill")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 30, height: 30)
+                .font(.headline)
+                .foregroundStyle(.accent)
+                .padding(.bottom, 40)
+        }
     }
 }
 
